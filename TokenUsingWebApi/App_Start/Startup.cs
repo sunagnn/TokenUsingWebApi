@@ -36,7 +36,7 @@ namespace TokenUsingWebApi.App_Start
             //Token üretimi için authorization ayarlarını belirliyoruz.
             OAuthAuthorizationServerOptions oAuthAuthorizationServerOptions = new OAuthAuthorizationServerOptions()
             {
-                TokenEndpointPath = new PathString("/token"), //Token talebini yapacağımız dizin
+                TokenEndpointPath = new PathString("/token"), //Token talebini yapacağımız dizin 
                 AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(1), //Oluşturulacak tokenı bir gün geçerli olacak şekilde ayarlıyoruz.
                 AllowInsecureHttp = true, //Güvensiz http portuna izin veriyoruz.
                 Provider = new ProviderAuthorization() //Sağlayıcı sınıfını belirtiyoruz. Birazdan bu sınıfı oluşturacağız.
